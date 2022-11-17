@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 //VoteBox is designed to handle the votes for each of the 3 candidates for best daily image.
-//VoteBox should be accessed by via ajax handling a request to add a vote to a candidate, or check vote counts. 
+//VoteBox should be accessed by via ajax/servlet handling a request to add a vote to a candidate, or check vote counts. 
 //The synchronization of VoteBox is important to prevent multiple ajax/servlet threads (<-these are created automatically by the 
 //Servlet class) from accessing the VoteBox at the same time.
 public class VoteBox {

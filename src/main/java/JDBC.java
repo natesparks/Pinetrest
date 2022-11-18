@@ -96,7 +96,63 @@ public class JDBC {
 		
 	}
 	
-	public static Vector<String> insertCollection(String userID, String collectionName, String img_path){
+	public static boolean insertCollection(String userID, String collectionName, String img_path){
+		
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver"); 
+		}catch(ClassNotFoundException e) {
+			System.out.println("Error in loginUser" + e.getMessage()); 
+		}
+		
+		Connection conn = null; 
+		Statement st = null; 
+		
+		try {
+			conn = DriverManager.getConnection(JDBC_URL+ SQL_PASSWORD); 
+			st = conn.createStatement(); 
+			
+		}catch(SQLException e) {
+			System.out.println("SQLException in assembleCollection" + e.getMessage()); 
+		}finally {
+			try {
+				if(st != null) {st.close(); }
+				if(conn != null) {conn.close(); }
+			}catch(SQLException e) {
+				System.out.println("Closing SQLException in assembleCollection" + e.getMessage()); 
+			}
+		}
+		
+	}
+	
+	public static boolean deleteCollection(String userID, String collectionName, String img_path){
+		
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver"); 
+		}catch(ClassNotFoundException e) {
+			System.out.println("Error in loginUser" + e.getMessage()); 
+		}
+		
+		Connection conn = null; 
+		Statement st = null; 
+		
+		try {
+			conn = DriverManager.getConnection(JDBC_URL+ SQL_PASSWORD); 
+			st = conn.createStatement(); 
+			
+		}catch(SQLException e) {
+			System.out.println("SQLException in assembleCollection" + e.getMessage()); 
+		}finally {
+			try {
+				if(st != null) {st.close(); }
+				if(conn != null) {conn.close(); }
+			}catch(SQLException e) {
+				System.out.println("Closing SQLException in assembleCollection" + e.getMessage()); 
+			}
+		}
+		
+	}
+	
+	public static boolean deleteFromCollection(String userID, String collectionName, String img_path){
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver"); 

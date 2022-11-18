@@ -7,7 +7,7 @@ import java.util.Vector;
 public class JDBC {
 	
 	private static String JDBC_URL = "jdbc:mysql://localhost/Pinetrest?user=root&password="; 
-	private static String SQL_PASSWORD = "Packers123"; 
+	private static String SQL_PASSWORD = "password"; 
 	
 	
 	public static User loginUser(String username, String password) {
@@ -96,7 +96,7 @@ public class JDBC {
 		
 	}
 	
-public static Vector<String> insertCollection(String userID, String collectionName, String img_path){
+	public static Vector<String> insertCollection(String userID, String collectionName, String img_path){
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver"); 

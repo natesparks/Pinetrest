@@ -147,6 +147,15 @@ public class JDBC {
 	
 	public static boolean deleteCollection(String userID, String collectionName){
 		
+		if(userID == null || collectionName == null) {
+			System.out.println("Error in delete Collection: cannot delete null values"); 
+			return false; 
+		}
+		else if(userID.equals("") || collectionName.equals("")) {
+			System.out.println("Error in delete Collection: cannot delete blank values"); 
+			return false; 
+		}
+		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver"); 
 		}catch(ClassNotFoundException e) {
@@ -179,6 +188,16 @@ public class JDBC {
 	}
 	
 	public static boolean deleteFromCollection(String userID, String collectionName, String img_path){
+		
+		if(userID == null || collectionName == null || img_path == null) {
+			
+			System.out.println("Cannot delete null values");
+			return false; 
+		}
+		else if (userID.equals("")  || collectionName.equals("") || img_path.equals("")) {
+			System.out.println("Cannot delete blank value");
+			return false; 
+		}
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver"); 

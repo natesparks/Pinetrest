@@ -1,0 +1,195 @@
+label {
+    color: #FFFFFF;
+    font-family: 'Abhaya Libre ExtraBold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    background-color: #4D4847;
+    width: 279px;
+    height: 68px;
+    border-radius: 11px;
+    margin-top: 15px;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    filter: drop-shadow(0.6rem 0.4rem 0.6rem rgba(0, 0, 0, 0.2));
+    position: relative;
+}
+
+label input {
+    display: none;
+}
+
+label input:checked ~ span {
+    width: 279px;
+    height: 68px;
+    border-radius: 11px;
+    border: none;
+    box-shadow: 0 0 3pt 2pt rgb(17, 140, 151);
+    display: block;
+}
+
+[type=submit] {
+    font-family: 'Abhaya Libre ExtraBold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    width: 160px;
+    height: 68px;
+    background-color: #1B998B;
+    color: white;
+    border-radius: 11px;
+    text-align: center;
+    position: relative;
+    border: none;
+    margin: 30px;
+    filter: drop-shadow(0.6rem 0.4rem 0.6rem rgba(0, 0, 0, 0.2));
+}
+
+[type=submit]:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.radio-button {
+    text-align: center;
+}
+
+.form-submit-button {
+    text-align: center;
+}
+
+.voting-text {
+    font-family: 'Abhaya Libre ExtraBold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 50px;
+    background-color: #4D4847;
+    color: #FFFFFF;
+    border-radius: 11px;
+    text-align: center;
+    position: relative;
+    border: none;
+    width: 668.67px;
+    height: 236px;
+    margin: auto;
+    filter: drop-shadow(0.6rem 0.4rem 0.6rem rgba(0, 0, 0, 0.2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*General browsing CSS*/
+
+body {
+    /* .set radial background color.. */
+    background: radial-gradient(ellipse at center, #CAB7A2 0%, #cab7a296 100%);
+}
+
+h1 {
+    padding: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Abhaya Libre', serif;
+}
+
+h3 {
+    margin-top: 0;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #BFBFBF;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Abhaya Libre', serif;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.centered-vertically {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.active-tab {
+    /* .rounded color tab wrapped around the text.. */
+    border-radius: 20px;
+    background-color: #1B998B;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+    font-family: 'Abhaya Libre', serif;
+}
+
+.navLeft {
+    background-color: #4D4847;
+    height: 100vh;
+    /*position: fixed;*/
+    overflow-x: hidden;
+    overflow-y: hidden;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: block;
+    float: left;
+}
+
+.card {
+    filter: drop-shadow(0.6rem 0.4rem 0.6rem rgba(0, 0, 0, 0.2));
+    padding: 20px;
+    border-radius: 27px;
+    margin: 20px;
+    background-color: #F7F7F7;
+    height: 400px;
+}
+
+.card h3 {
+    /*Align the text to the bottom and center of div*/
+    /* transform: translate(-50%, -50%); */
+    padding-top: 10%;
+    text-align: center;
+    color: black;
+}
+
+.card-image {
+    /*center the image horizontally with rounded corners*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+.top-chart-title {
+    margin-top: 100px;
+    padding-left: 30px;
+}
+
+.bottom-chart-title {
+    margin-top: 30px;
+    padding-left: 30px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    
+    <title>Voting</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="vote.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&display=swap" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+
+    <div class="col-md-2 navLeft">
+      <div class="row">
+          <h1>Pinetrest</h1>
+      </div>
+
+      <div class="row">
+          <!--Inserr a circular image-->
+          <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" class="avatar">
+
+          <h3>Sutej Singh</h3>
+      </div>
+
+      <div class="row">
+          <!--Center this block vertically-->
+          <div class="col-md-12 centered-vertically">
+              <a href = "index.html"><h3>My Collections</h3></a>
+              <h3>Browse</h3>
+              <h3 class="active-tab">Vote</h3>
+              <h3>Favorites</h3>
+          </div>
+      </div>
+    </div>
+
+    <form>
+      <div class="col-md-10">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="card" style="position: relative; height:auto; width:auto">
+                            <!-- <canvas class="p-2" id="expenditure"></canvas> -->
+                            <!-- Insert an image in the center with rounded corners-->
+                            <img src="https://st.depositphotos.com/1053932/3570/i/950/depositphotos_35704491-stock-photo-yosemite-merced-river-el-capitan.jpg" alt="Avatar" class="card-image">
+                            <h3>Yosemite</h3>
+                        </div>
+                        <div class = "radio-button">
+                          <label>
+                            <input type = "radio" name = "picture-vote" value = "Photograph #1" required>
+                            <span>Photograph #1</span>
+                          </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="card" style="position: relative; height:auto; width:auto">
+                            <!-- <canvas class="p-2" id="expenditure"></canvas> -->
+                            <!-- Insert an image in the center with rounded corners-->
+                            <img src="https://st.depositphotos.com/1053932/3570/i/950/depositphotos_35704491-stock-photo-yosemite-merced-river-el-capitan.jpg" alt="Avatar" class="card-image">
+                            <h3>Yosemite</h3>
+                        </div>
+                        <div class = "radio-button">
+                          <label>
+                            <input type = "radio" name = "picture-vote" value = "Photograph #2">
+                            <span>Photograph #2</span>
+                          </label>
+                        </div>
+                  </div>   
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="card" style="position: relative; height:auto; width:auto">
+                            <!-- <canvas class="p-2" id="expenditure"></canvas> -->
+                            <!-- Insert an image in the center with rounded corners-->
+                            <img src="https://st.depositphotos.com/1053932/3570/i/950/depositphotos_35704491-stock-photo-yosemite-merced-river-el-capitan.jpg" alt="Avatar" class="card-image">
+                            <h3>Yosemite</h3>
+                        </div>
+                        <div class = "radio-button">
+                          <label>
+                            <input type = "radio" name = "picture-vote" value = "Photograph #3">
+                            <span>Photograph #3</span>
+                          </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class = "form-submit-button">
+        <input type = "submit" value = "Submit">
+      </div>
+
+    </form>
+
+    <!--
+    <div class = "form-submit-button">
+      <input type = "submit">
+    </div>
+    -->
+    <div class = "voting-text">
+      Voting ends at 6pm PST. You can vote for ONE picture at any time before then.
+    </div>
+    <!--
+    <label>
+      <input type = "radio" name = "option">
+      <span>Option one</span>
+    </label>
+    <label>
+      <input type = "radio" name = "option">
+      <span>Option two</span>
+    </label>
+    <label>
+      <input type = "radio" name = "option">
+      <span>Option three</span>
+    </label>
+  -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+  </body>
+</html>
